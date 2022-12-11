@@ -9,8 +9,8 @@ services:
       MY_SQL_PASSWORD: root
     volumes:
       - /home/mysql/data:/var/lib/mysql
-  backend:
-    container_name: rawend/mycontainer
+  app:
+    container_name: mycontainer
     image: rawend/myimage 
     restart: on-failure
     ports:
